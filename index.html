@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Movie Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="">Nazi Zombies</a>
+        <div class="toggle"><img src="./css/download.jfif"></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>only the <span>dead</span> have seen the end of war</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quasi ab doloribus totam sequi perferendis quos provident maxime reiciendis dolor, 
+                ex eligendi sit molestias animi iusto dicta? Voluptas quasi nam rem.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="./css/youtube.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="./css/facebook.png"></a></li>
+                <li><a href="#"><img src="./css/twitter.png"></a></li>
+                <li><a href="#"><img src="./css/instagram.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="./css/Zombies Reveal Trailer _ Call of Duty_ Vanguard.mp4" controls="true"></video>
+        <img src="./css/close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript"> 
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause()
+        }
+    </script>
+</body>
+</html>
